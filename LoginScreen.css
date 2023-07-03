@@ -1,0 +1,96 @@
+/* body{
+    background-color: black;
+} */
+.loginscreen{
+    position: relative;
+    height: 100%;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/530fc327-2ddb-4038-a3f0-2da2d9ccede1/9c547c8a-e707-4bdb-bdbc-843f134dd2a6/IN-en-20230619-popsignuptwoweeks-perspective_alpha_website_large.jpg") center no-repeat ;
+    background-size: cover;
+    justify-content: space-between;
+}
+.loginscreen__background{
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background:rgba(0,0,0,0.4) ;
+     background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0.8) 100%
+    );
+}
+.loginscreen__logo{
+    position:fixed;
+    left: 50px;
+    object-fit: contain;
+    overflow: hidden;
+    /* padding: 10px; */
+}
+.loginscreen__button{
+    position: fixed;
+    right: 50px;
+    top: 25px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.87);
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 5px;
+    border-color: rgba(255, 0, 0, 0.87);
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+}
+.loginscreen__button:hover{
+    background-color: rgba(255, 0, 0, 0.621);
+}
+.loginscreen__body{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top: 40%;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    object-fit: contain;
+    left:0;
+    right: 0;
+}
+.loginscreen__body > h1{
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+.loginscreen__body > h2{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.loginscreen__body > h3{
+    /* font-size: 1.5rem; */
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.loginscreen__input > form > button{
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.87);
+    padding: 16px 20px;
+    /* border-radius: 5px; */
+    border: none;
+    border-color: rgba(255, 0, 0, 0.87);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+
+.loginscreen__input > form > input{
+    padding:10px;
+    outline-width: 0;
+    height: 30px;
+    width: 40%;
+    max-width: 600px;
+    border: none;
+    margin-right: 10px;
+}
